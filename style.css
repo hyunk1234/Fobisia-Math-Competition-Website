@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Satisfy&display=swap');
+
+
+
+body th{
+  padding: 7px;
+}
+
+body {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  color: rgb(250,250,250);
+  text-align:center;
+}
+
+#even {
+  background: rgb(70,70,70);
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: auto;
+  border-bottom: 3px solid rgb(250,250,250);
+  background: rgb(20,20,20);
+}
+
+#navigation {
+  margin: 0px 170px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left:40px;
+}
+
+.navbar a::before{
+  content: '';
+  position:absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(250,250,250);
+}
+
+.navbar a:hover::before{
+  width:100%;
+}
+
+#template {
+  border: 1px solid #FFF;
+  background: rgb(37,37,37);
+  width: 60%;
+  margin: auto;
+  padding: 0.5px 8px;
+}
+
+body main {
+  margin: 0px 50px;
+}
+
+#teleport {
+  color: rgb(250,250,250);
+}
+
+body header {
+  font-family: 'Sour Gummy', sans-sans-serif;
+  font-family: "Hahmlet", serif;
+  width:auto;
+  float:none;
+  margin:30px 600px;
+  width: 300px;
+  padding: 10px;
+}
+
+body main {
+  width: 90%;
+  color: rgb(250,250,250);
+  float:none;
+}
+
+body table {
+  background: rgb(37,37,37);
+  color: rgb(250,250,250);
+  float:none;
+}
+
+section h3 {
+  text-decoration:underline;
+}
+#principal_waku {
+  float:right;
+  height:400px;
+  width:400px;
+  border: 3px solid rgb(250,250,250);
+}
+#left_text {
+  font-size: 20px;
+  text-align:left;
+}
+#subHeaddingLeft {
+  float:left;
+  text-decoration: underline;
+}
+
+#right_text {
+  font-size: 20px;
+  text-align:right;
+}
+#subHeaddingRight {
+  float:right;
+  text-decoration: underline;
+}
+#developers {
+  text-align: center;
+  font-size: 17px;
+}
+
+#languages {
+  text-align:center;
+  font-size: 25px;
+  display:inline-block;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.button {
+  color: rgb(250,250,250);
+  text-decoration:none;
+  border: 1px solid rgb(250,250,250);
+  border-radius:15px;
+  padding: 3px 9px;
+
+}

@@ -1,0 +1,82 @@
+<html>
+
+  <head>
+    <title>Past Papers : FOBISIA math competition</title>
+
+    <meta name="description" content="FOBISIA math competition website for 2024 in BIS Hanoi">
+    <meta name="keywords" content="BIS,BISH,BIShanoi,FOBISIA,math,MATH,competition,COMPETITION,2024">
+    <meta name="author" content="Team : Slaves">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* Basic styling for dropdown and iframe */
+      select {
+          padding: 10px;
+          margin: 20px 0;
+          width: 100%;
+          font-size: 16px;
+      }
+
+      iframe {
+          width: 100%;
+          height: 500px;
+          border: 1px solid #ccc;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <section id="nav">
+        <a href="#" class="Logo"><img width="160px" height="60px" src="logo.png" /></a>
+        <nav class="navbar" id="navigation">
+          <a href="home_KR.html">홈페이지</a>
+          <a href="information_KR.html">대회 정보</a>
+          <a href="schedule_KR.html">일정</a>
+          <a href="pastPaper_KR.html">Pastpaper</a>
+          <a href="FAQs_KR.html">질문</a>
+          <a href="developer_KR.html">개발자 명단</a>
+          <a href="language.html">언어</a>
+        </nav>
+      </section>
+      <br />
+      <br />
+      <br />
+
+      <h1 style="height:20px"><b>Past Papers</b></h1>
+      <h4>FOBISIA 수학 대회 Past Papers</h4>
+    </header>
+    <section id="template">
+      <main>
+        <h2>사용 가능한 Past Papers</h2>
+        <select id="pdfDropdown" onchange="loadPDF()">
+          <option value="">Select a past paper...</option>
+          <option value="Downloads/Written Test Individual.pdf">Written Test Individual</option>
+          <option value="Downloads/Past Question Examples.pdf">Past Question Examples</option>
+          <option value="Downloads/GRID GAME - Questions 1.pdf">GRID GAME Questions</option>
+          <option value="Downloads/Final Round - Dominoes Questions.pdf">Final Round - Dominoes Questions</option>
+        </select>
+
+        <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+      </main>
+    </section>
+
+    <script>
+      function loadPDF() {
+        var dropdown = document.getElementById("pdfDropdown");
+        var iframe = document.getElementById("pdfViewer");
+        var selectedPDF = dropdown.value;
+
+        if (selectedPDF) {
+          iframe.src = selectedPDF;
+        } else {
+          iframe.src = "";  // Clear the iframe if no option is selected
+        }
+      }
+    </script>
+  </body>
+
+</html>
