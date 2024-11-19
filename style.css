@@ -67,6 +67,10 @@ body {
   width: 60%;
   margin: auto;
   padding: 0.5px 8px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  height: 100vh; /* Full height of the viewport */
 }
 
 body main {
