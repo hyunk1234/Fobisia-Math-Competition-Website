@@ -14,6 +14,10 @@ body {
   background-position:center;
   color: black;
   text-align:center;
+  margin: 0; /* Remove default body margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
 }
 
 #even {
