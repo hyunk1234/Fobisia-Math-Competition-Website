@@ -155,17 +155,4 @@ section h3 {
 
 }
 
-@media (max-width: 768px) {
-  #nav {
-    flex-direction: column;
-    padding: 8px 10%; /* Adjust padding for smaller screens */
-  }
-  
-  body header {
-    margin: 20px 0; /* Adjust header margin */
-  }
 
-  #template {
-    width: 95%; /* Adjust template width */
-  }
-}
