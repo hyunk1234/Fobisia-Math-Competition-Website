@@ -11,14 +11,13 @@ body {
   background-image: url(math_background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   color: black;
-  text-align:center;
+  text-align: center;
   margin: 0; /* Remove default body margin */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center align items */
+  padding: 20px; /* Add some padding */
 }
+
 
 #even {
   background: rgb(186, 219, 240);
@@ -72,13 +71,13 @@ body {
 #template {
   border: 1px solid #000;
   background-image: url(background_two.png);
-  width: 60%;
-  margin: 30px auto;
-  padding: 0.5px 8px;
+  width: 90%; /* Use percentage for responsiveness */
+  max-width: 1200px; /* Limit max width for larger screens */
+  margin: 30px auto; /* Center align with auto margins */
+  padding: 20px; /* Add padding */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align children */
 }
 
 body main {
