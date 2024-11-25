@@ -17,7 +17,11 @@ body {
 }
 
 #even {
-  background: rgb(106, 208, 234);
+  background: rgb(186, 219, 240);
+}
+
+#table_title {
+  background: rgb(56, 111, 249);
 }
 
 #nav {
@@ -95,7 +99,7 @@ body main {
 }
 
 body table {
-  background: rgb(186, 219, 240);
+  background: rgb(106, 208, 234);
   color: black;
   float:none;
 }
