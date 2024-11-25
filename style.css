@@ -69,9 +69,6 @@ background-image: url(background_two.png);
 width: 60%;
 margin: auto;
 padding: 0.5px 8px;
-display: flex;
-align-items: center;
-justify-content: center;
 }
 
 body main {
