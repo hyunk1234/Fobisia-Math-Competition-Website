@@ -103,6 +103,7 @@ body table {
 background: rgb(106, 208, 234);
 color: black;
 float:none;
+align-self: center;
 }
 
 section h3 {
@@ -153,8 +154,5 @@ border-radius:15px;
 padding: 3px 9px;
 
 }
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
