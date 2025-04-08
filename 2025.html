@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2025 Materials</title>
+
+    <meta name="description" content="FOBISIA math compeition website for 2024 in BIS hanoi">
+    <meta name="keywords" content ="BIS,BISH,BIShanoi,FOBISIA,math,MATH,competition,COMPETITION,2024">
+    <meta name="author" content="Team : Slaves">
+
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        /* Basic styling for dropdown and iframe */
+        select {
+            padding: 10px;
+            margin: 20px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+  
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+      </style>  
+</head>
+<body>
+    <header>
+        <section id="nav">
+          <a href="index.html" class="Logo"><img width="160px" height="60px" src="logo.png" /></a>
+          <nav class="navbar" id="navigation">
+            <a href="index.html">Home</a>
+            <a href="information.html">Information</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="pastPaper.html">Past Paper</a>
+            <a href="2025.html">2025 Materials</a>
+            <a href="FAQs.html">FAQS</a>
+            <a href="developer.html">Developer</a>
+            <a href="language.html">Language</a>
+          </nav>
+        </section>
+        <br />
+        <br />
+        <br />
+  
+        <h1 style="height:20px"><b>2025 Materials</b></h1>
+        <h4>FOBISIA math competition 2025 Materials</h4>
+      </header>
+      <section id="template">
+        <main>
+          <h2>Available Papers</h2>
+          <select id="pdfDropdown" onchange="loadPDF()">
+            <option value="">Select a paper...</option>
+            <option value="Downloads/Balloon Car Instructions.pdf">Balloon Car Instructions</option>
+            <option value="Downloads/Final Leaderboard.png">Final Leaderboard</option>
+            <option value="Downloads/Individual Test with Answers.pdf">Individual Test with Answers</option>
+            <option value="Downloads/Paper Cup Instructions.pdf">Paper Cup Instructions</option>
+            <option value="Downloads/GRID GAME - Questions 1.pdf">GRID GAME - Questions 1</option>
+            <option value="Downloads/Round 1 - Logic.pdf">Round 1 - Logic</option>
+            <option value="Downloads/Round 1 - Number Sense.pdf">Round 1 - Number Sense</option>
+          </select>
+  
+          <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        </main>
+      </section>
+  
+      <script>
+        function loadPDF() {
+          var dropdown = document.getElementById("pdfDropdown");
+          var iframe = document.getElementById("pdfViewer");
+          var selectedPDF = dropdown.value;
+  
+          if (selectedPDF) {
+            iframe.src = selectedPDF;
+          } else {
+            iframe.src = "";  // Clear the iframe if no option is selected
+          }
+        }
+      </script>
+    </body>
+</body>
+</html>
